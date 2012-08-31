@@ -1,0 +1,108 @@
+body {
+    background: url("./../img/pattern.png") repeat;
+}
+
+header {
+    text-align: center;
+    line-height: 39px;
+}
+
+
+#home { display :none; }
+
+#home img{
+    margin-bottom: 18px;
+}        
+
+#nav {
+    text-align: center;
+}
+
+#nav a {
+    color: #9bc6c5;
+}
+
+#nav ul {
+    margin: 10px 0;
+    list-style: none;
+}
+
+#nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+        
+.clear {
+    clear: both;
+}
+
+#story {
+    font-size: 16px;
+    line-height: 26px;
+    color: #444;
+}
+
+
+#story p {
+    margin-bottom: 26px;
+    font-weight: 300;
+}
+
+#story p.last {
+    margin: 0;
+    font-weight: 300;
+}
+
+#story .header {
+    text-align: center;
+}
+
+#story .banner {
+    background: url("./../home.jpg");
+    background-size: 100%;
+    background-position: 20%;
+    height: 413px;
+    width: 100%;
+    margin-bottom: 26px;
+}
+
+
+#story .content {
+    background: #e1e7db;
+    padding: 16px;
+    border: 6px #d4dace solid;
+}
+
+#photos {
+    display: none;
+}
+
+#photos .row {
+    margin-bottom: 20px;
+}
+
+footer {
+    margin: 36px 0;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h2 {
+    font-size: 26px;            
+    font-weight: 300;
+    line-height: 42px;
+    margin: 0;
+    color: #555;
+    margin-top: 36px;
+}
+
+.header h4 {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    margin: 0 0 26px 0;
+}
