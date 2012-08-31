@@ -37,6 +37,7 @@
             <ul>
                 <li><a href="#" class="story">Story</a></li>
                 <li><a href="#" class="photos">Photos</a></li>
+                <li><a href="#" class="about">About</a></li>
             </ul>
         </div>
     
@@ -56,7 +57,7 @@
                 <div class="banner"></div>
                 <div class="content tk-museo-sans">
                     <p>
-                        On an overcast morning in the Bay Area, Ryan picked Lisa to go Napa.  Lisa thought they were going to celebrate the two year anniversary of their first date, but unbeknownst to her, Ryan had other plans.  Before they left for Napa, Ryan presented her with a gift; a necklace with a California-shaped pendant with a heart over Los Angeles.
+                        On an overcast morning in the Bay Area, Ryan picked up Lisa to go have lunch in Napa, CA.  Lisa thought they were going to celebrate the two year anniversary of their first date, but unbeknownst to her, Ryan had other plans.  Before they left for Napa, Ryan presented her with a gift; a necklace with a California-shaped pendant with a heart over Los Angeles.
                     </p>
                     
                     <p>
@@ -391,36 +392,99 @@
                     </a>
                 </div>
             </div>
+            <div class="span2">
+                <div class="thumbnail">
+                    <a href="img/large/40.jpg" class="lightview" data-lightview-group="mixed">
+                        <img src="img/square/40.jpg" />
+                    </a>
+                </div>
+            </div>
         </div>            
     </div>
 
+    <div class="container" id="about">
+        <div class="row">
+            <div class="span12">
+                <div class="header">
+                    <div class="tk-adelle">
+                        <h2>About</h2>
+                    </div>
+                </div>
+           
+                <div class="section">     
+                    <h4>Follow us at:</h4>
+                    <ul>
+                        <li><a href="http://twitter.com/ryannguyen">@ryannguyen</a></li>
+                        <li><a href="http://twitter.com/filet0fishie">@filet0fishie</a></li>
+                    </ul>
+                </div>
+                
+                
+                <div class="sections">
+                    <h4>Special thanks to:</h4>
+                    <ul>
+                        <li>Our Families</li>
+                        <li>Tabitha Chua</li>
+                        <li>Karen Tsugawa</li>
+                        <li><a href="http://twitter.com/cirechu">@cirechu</a></li>
+                        <li><a href="http://twitter.com/neuaehs">@neuaehs</a></li>
+                    </ul>
+                </div>
+                <div class="section">     
+                    <h4>Links:</h4>
+                    <ul>
+                        <li><a href="http://www.adhocrestaurant.com">Ad Hoc</a></li>
+                        <li><a href="http://www.etsy.com/listing/64359009/i-heart-california">I Heart California Pendant</a></li>
+                        <li><a href="http://www.magiccastle.com">The Magic Castle</a></li>
+                        <li><a href="http://www.cityofnapa.org">Napa California</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <footer>
         <div>&nbsp;</div>
-    </footer>
-    
+    </footer>    
     <script>
         $(document).ready(function() {
             $("a.story").click(function(){
                $('#photos').hide();
+               $("#about").hide()
                $('#story').show();
                return false; 
             });
 
             $("a.photos").click(function(){
                $('#story').hide();
+               $("#about").hide()
                $('#photos').show();
+               return false; 
+            });
+
+            $("a.about").click(function(){
+               $('#story').hide();
+               $('#photos').hide();
+               $("#about").show()
                return false; 
             });
 
         });
         
-        /*
-        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
-        */
+    </script>
+    
+    <script type="text/javascript">
+    
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34493836-1']);
+      _gaq.push(['_trackPageview']);
+    
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    
     </script>
 </body>
 </html>
